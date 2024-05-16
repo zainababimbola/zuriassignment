@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+    max-width: 1440px;
+    padding-top: 2rem;
+}
+
+header, .first-section,.prl, .third-section{
+    padding: 0 50px;
+}
+
+/*  Primary  */
+color{
+    /* Very Dark Blue  */color: hsl(243, 87%, 12%);
+    /* Desaturated Blue */ color: hsl(238, 22%, 44%);   
+
+/*   Accent   */
+
+/*  Bright Blue  */color: hsl(224, 93%, 58%);
+/*  Moderate Cyan:  */ color: hsl(170, 45%, 43%);
+
+/*   Neutral   */
+
+/* Light Grayish Blue  */ color: hsl(240, 75%, 98%);
+/* Light Gray*/ color: hsl(0, 0%, 75%);
+}
+
+/* Styling for nav links*/
+
+.nav-links{
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    font-family: "Raleway", sans-serif;
+}
+
+.right-link{
+    display: flex;
+}
+
+ul li{
+    list-style: none;
+}
+
+.right-link a{
+    padding: 0 30px;
+    text-decoration: none;
+    color: hsl(243, 87%, 12%);
+}
+
+.right-link a:hover{
+    background-color: hsl(243, 87%, 12%);
+    color: #fff;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+}
+
+/* Styling for first section  */
+
+.first-section{
+    display: flex;
+    margin: 2.5rem auto 0;
+}
+
+.hero-top{
+    width: 100%;
+    margin: auto;
+}
+
+.img img{
+    width: 100%;
+}
+
+h2, .p, form{
+    width: 70%;
+    padding: 0.7rem 0;
+}
+
+form input[type="email"]{
+    color: #000;
+    padding: 10px 10px 10px 15px;
+    width: 60%;
+    border: 1px solid lightgray;
+    border-radius: 3px;
+}
+
+button{
+    width: 30%;
+    background-color: hsl(224, 93%, 58%);
+    color: #fff;
+    padding: 10px;
+    border: none;
+    margin-left: 1rem;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: rgb(8, 132, 240);
+}
+
+button:active{
+    background-color: rgb(4, 107, 198);
+}
+
+/* Second section styling */
+
+.second-section{
+    background-image: url("./images/bg-curve-desktop.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.prl{
+    display: flex;
+    margin-top: 8em;
+}
+
+.second-hero{
+    width: 100%;
+    margin: 6rem auto 5rem;
+}
+
+.second-hero a{
+    text-decoration: underline;
+    color: hsl(170, 45%, 43%);
+}
+
+#second-img{
+    margin: 6rem auto 5rem;
+}
+
+.small-box{
+    width: 46%;
+    margin-top: 2rem;
+    font-size: 0.7rem;
+    padding: 1.5rem;
+    box-shadow: 2px 2px 4px 5px rgba(0, 0, 0, 0.1);
+}
+
+.small-box p{
+    padding-top: .9rem;
+}
+
+.circle-image{
+    display: flex;
+    padding-top: 1rem;
+}
+
+.circle-image img{
+    border-radius: 50%;
+    width: 15%;
+    height: 15%;
+}
+
+.founder{
+    padding-left: .6rem;
+    padding-top: .6rem;
+    font-size: .8rem;
+}
+
+.founder p{
+    padding-top: .2rem;
+    font-size: .6rem;
+}
+
+/* Styling for third section */
+
+.third-section{
+    background-color: hsl(238, 22%, 44%);
+    display: flex;
+    color: #fff;
+}
+
+.third-hero, .form-field{
+    width: 100%;
+    padding: 5rem 0;
+}
+
+.third-hero h2, .third-hero p{
+    width: 70%;
+}
+
+.third-hero p{
+    padding-top: .6rem;
+}
+
+.form-field form input{
+    width: 85%;
+}
+
+.btn button{
+    width: 35%;
+    margin-top: 1rem;
+    margin-left: 0;
+}
+
+/* Styling for the footer */
+footer{
+    background-color: hsl(243, 87%, 12%);
+    color: #fff;
+    padding: 4rem 6rem 4rem 3rem;
+}
+
+.d-fl{
+    display: flex;
+    justify-content: space-between;
+}
+
+.d-fl a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.d-fl a:hover{
+    color: rgb(116, 172, 246);
+}
+
+.d-fl a:active{
+    color: rgb(5, 135, 222);
+}
+
+.pt li{
+    padding-top: .8rem;
+}
+
+#social{
+    display: flex;
+}
+
+#social li{
+    padding: .8rem 1rem 0;
+}
+
+#social i{
+    border-radius: 50%;
+    border: 1px solid #fff;
+    padding: .6rem;
+}
+
+#social i:hover{
+    border: 1px solid rgb(116, 172, 246);
+}
+
+/* styling for the media query */
+
+@media screen and (max-width: 600px){
+    body{
+        padding-top: 0;
+    }
+    header, .first-section,.prl, .third-section{
+        padding: 0 1.3rem;
+    }
+
+    nav img {
+        width: 30%;
+        height: 15%;
+    }
+
+    .right-link a {
+        padding: 0 .6rem;
+        font-size: .8rem;
+    }
+
+    .first-section {
+        flex-direction: column-reverse;
+    }
+
+    h2, .p, form {
+        width: 100%;
+        padding: 1rem 0 0.5rem;
+        text-align: center;
+    }
+
+    .p{
+        font-size: 1rem;
+    }
+
+    form input[type="email"] {
+        width: 100%;
+        margin-top: .7rem;
+    }
+
+    button {
+        width: 100%;
+        margin: .8rem auto 0;
+    }
+
+    .prl {
+        margin-top: 5em;
+        flex-direction: column-reverse;
+    }
+
+    .second-hero{
+        text-align: center;
+    }
+
+    .p{
+        font-size: 1rem;
+        text-align: justify;
+    }
+
+    .p:last-of-type{
+        padding-bottom: 2rem;
+    }
+
+    #h2{
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    #second-img {
+        margin: 5rem auto 0;
+    }
+
+}
+
+
+
+
+
+
+
